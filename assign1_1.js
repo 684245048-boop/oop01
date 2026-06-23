@@ -1,20 +1,18 @@
 "use strict";
-// 2. การประกาศตัวแปร (Variables & Types) โดยใช้ Static Typing
+
 let productName = "คีย์บอร์ดบลูทูธ";
 let pricePerUnit = 1200;
 let quantity = 1;
 let isMember = true;
-// 3. การคำนวณ (Calculations & Operators)
-// คำนวณราคารวมก่อนหักส่วนลด
+
 let totalPrice = pricePerUnit * quantity;
-// สร้างเงื่อนไขส่วนลดพิเศษ โดยใช้ Logical Operators (&&, ||)
-// ถ้ายอดซื้อรวมเกิน 1,000 บาท หรือ เป็นสมาชิก จะได้รับส่วนลด 10%
+
 let hasDiscount = (totalPrice > 1000) || isMember;
 let discountPercent = hasDiscount ? 0.10 : 0;
 let discountAmount = totalPrice * discountPercent;
-// คำนวณราคาที่ต้องจ่ายจริงหลังหักส่วนลด
+
 let finalPrice = totalPrice - discountAmount;
-// 4. การแสดงผล (Output) โดยใช้ Template Literals
+
 console.log(`========================================`);
 console.log(`รายงานสรุปยอดซื้อสินค้า`);
 console.log(`========================================`);
